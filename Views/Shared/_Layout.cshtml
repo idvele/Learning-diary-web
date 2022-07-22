@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LearningDiary_IK0._1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/sites.css" />
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
+            <div class="container">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
+                    <span class="fs-4">Learning diary</span>
+                </a>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="index">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Topics" asp-action="index">Learning Diary</a>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Search" asp-action="index">Search</a>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="HearAjoke" asp-action="index">Hear A Joke</a>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="About" asp-action="index">About</a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - LearningDiary_IK0._1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
