@@ -6,8 +6,8 @@
 
 <h1>Learning Diary </h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
+<p id="Create"  >
+    <a asp-action="Create" class="helper" id="create" onmouseover=colorOn(create) onmouseout=colorOff(create) > Create New</a> @*Miksi asp-creation ei toimi onmouseoverin ym kanssa*@
 </p>
 <table class="table">
     <thead .d-flex>
@@ -67,9 +67,9 @@
                 @Html.DisplayFor(modelItem => item.CompletionDate)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> 
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="helper"  asp-action="Edit" asp-route-id="@item.Id">Edit</a>   @*onmouseover=colorOn(@item.Id) onmouseout=colorOff(@item.Id*@
+                <a class="helper" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                <a class="helper" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

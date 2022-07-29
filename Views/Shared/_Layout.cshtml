@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - LearningDiary_IK0._1</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/sites.css" />
+    <link rel="stylesheet" href="~/css/sites3.css" />
 </head>
 <body>
     
@@ -14,7 +14,7 @@
             <div class="container">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                     <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
-                    <span class="fs-4">Learning diary</span>
+                    <span class="fs-4"><img src="~/css/Logo2.png" alt="Learning diary" width="100" />  </span>
                 </a>
 
                 <ul class="nav nav-pills">
@@ -41,10 +41,15 @@
         
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - LearningDiary_IK0._1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="row border-top footer text-muted">
+        <div class="col container">
+            &copy; 2022 - Ilari Katajamäki - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
         </div>
+        <div class="col helpercol">
+            <p class="helper" id="HelperIcon" onclick="Helper()" onmouseout= colorOff("HelperIcon") onmouseover= colorOn("HelperIcon") >Help</p>  </div>>
+
+
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

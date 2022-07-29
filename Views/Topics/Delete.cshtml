@@ -6,8 +6,8 @@
 
 <h1>Delete</h1>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
+<h3 class="table">Are you sure you want to delete this?</h3>
+<div class="table">
     <h4>Topics</h4>
     <hr />
     <dl class="row">
@@ -63,7 +63,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this?')" /> |
         <a asp-action="Index">Back to List</a>
     </form>
-</div>
+</div class="table">

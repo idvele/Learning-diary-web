@@ -64,6 +64,7 @@ body {
     margin-bottom: 60px;
     background-image: url(peace.jpg);
     background-attachment: fixed;
+    
 
 }
 .footer {
@@ -87,9 +88,38 @@ body {
 
 }
 
-.table{
-    background-color:lightgray;  
-
+.table {
+    background-color: #ecf0f1;
 }
 
+h1 {
+    background-color: #ecf0f1;
+    display: inline-block;
+    padding: 8px 8px 8px 8px;
+}
+
+#logo1{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.helper{
+    color:white;
+    display:inline-block;
+    background-color:cadetblue;
+    border-radius:25px;
+    width: 3cm;
+    text-align:center;
+    box-sizing:border-box;
+   
+}
+.helpercol {
+    text-align: right;
+}
+
+#Create{
+    height: 40px;
+}
 
