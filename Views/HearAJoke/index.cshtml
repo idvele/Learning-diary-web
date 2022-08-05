@@ -5,18 +5,25 @@
     ViewData["Title"] = "Hear A Joke";
 }
 
+@{
+}
+
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col table text-center">
             <h1> Joke-api</h1>
-            <div class="row text-center justify-content-center"> <button type="button" class="btn btn-success">Get a joke</button></div>
-           
-               
+            <div class="row text-center justify-content-center"> <button type="button" class="btn btn-success JokeBtn">Get a joke</button></div>
+
+
         </div>
     </div>
+    <div class="row justify-content-md-center">
 
-    <div class="col table text-center">
-        <p>Tässä on vitsihuumoria</p>
+        <div class="col-5  table text-center ">
+            <p id="jokePrint"></p>
+            @*tähän javascriptillä ladattu vitsi*@
+        
+        </div>
     </div>
 </div>
 
